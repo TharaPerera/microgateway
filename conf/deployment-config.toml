@@ -1,0 +1,23 @@
+[docker]
+  [docker.dockerConfig]
+    enable = true
+    name = "petstore"
+    registry = 'docker.wso2.com'
+    tag = 'v1'
+    # buildImage = ''
+    # dockerHost = ''
+    # dockerCertPath = ''
+    baseImage = 'wso2/wso2micro-gw:latest'
+    # enableDebug = ''
+    # debugPort = ''
+    # push = ''
+  [docker.dockerCopyFiles]
+    enable = true
+    [[docker.dockerCopyFiles.files]]
+      source = '/Users/tharamac/Documents/docker/wso2am-micro-gw-toolkit-macos-3.1.0/resources/conf/micro-gw.conf'
+      target = '/home/ballerina/conf/micro-gw.conf'
+      isBallerinaConf = true
+    # [[docker.dockerCopyFiles.files]]
+    #   source ='ballerinaTruststore.p12'
+    #   target = '/home/ballerina/wso2/runtime/bre/security/ballerinaTruststore.p12'
+    #   isBallerinaConf = false
