@@ -1,8 +1,8 @@
 [docker]
   [docker.dockerConfig]
     enable = true
-    name = "petstore"
-    registry = 'docker.wso2.com'
+    name = "microgateway"
+    registry = 'tharaperera'
     tag = 'v1'
     # buildImage = ''
     # dockerHost = ''
