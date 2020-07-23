@@ -17,4 +17,6 @@ COPY micro-gw.conf /home/ballerina/conf/micro-gw.conf
 
 USER ballerina
 
+FROM wso2/wso2micro-gw:3.0.2
+
 CMD gateway pizzashack.jar
